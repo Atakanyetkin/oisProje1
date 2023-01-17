@@ -1,0 +1,61 @@
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\OkulProje.exe.config
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\OkulProje.exe
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\OkulProje.pdb
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\EntityFramework.dll
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\EntityFramework.xml
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.dersekran.resources
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.menu.resources
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.ogrencidersekran.resources
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.ogrenciekran.resources
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.okulyönetimekran.resources
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.Properties.Resources.resources
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.GenerateResource.cache
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.CoreCompileInputs.cache
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.CopyComplete
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.exe
+C:\Users\mrxsh\Desktop\OkulProje\OkulProje\OkulProje\obj\Debug\OkulProje.pdb
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.AssemblyReference.cache
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.SuggestedBindingRedirects.cache
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.dersekran.resources
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.menu.resources
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.ogrencidersekran.resources
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.ogrenciekran.resources
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.okulyönetimekran.resources
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.Properties.Resources.resources
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.GenerateResource.cache
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.CoreCompileInputs.cache
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.exe
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.pdb
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\OkulProje.exe.config
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\OkulProje.exe
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\OkulProje.pdb
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.dll
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.xml
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\furka\Desktop\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.CopyComplete
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\OkulProje.exe.config
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\OkulProje.exe
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\OkulProje.pdb
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.dll
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.xml
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.AssemblyReference.cache
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.dersekran.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.menu.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.ogrencidersekran.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.ogrenciekran.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.okulyönetimekran.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.Properties.Resources.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.GenerateResource.cache
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.CoreCompileInputs.cache
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProjesi.csproj.CopyComplete
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.exe
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.pdb
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.dersekranlistele.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.ogrencidersekranlistele.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.ogrenciekranlistele.resources
+C:\Users\mrxsh\Desktop\ATAKANYETKİN\OkulProje1 (1)\OkulProje1\OkulProje\OkulProje\obj\Debug\OkulProje.okulyönetimiekranlistele.resources

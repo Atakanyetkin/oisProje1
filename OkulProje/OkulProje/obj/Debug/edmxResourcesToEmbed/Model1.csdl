@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OkulDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_ders">
+    <Key>
+      <PropertyRef Name="ders_id" />
+    </Key>
+    <Property Name="ders_id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ders_ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ders_kredi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ders_okulyonetimid" Type="Int16" />
+    <NavigationProperty Name="tbl_okulyonetim" Relationship="Self.FK_tbl_ders_tbl_okulyonetim" FromRole="tbl_ders" ToRole="tbl_okulyonetim" />
+    <NavigationProperty Name="tbl_ogrenciders" Relationship="Self.FK_tbl_ogrenciders_tbl_ders" FromRole="tbl_ders" ToRole="tbl_ogrenciders" />
+  </EntityType>
+  <EntityType Name="tbl_ogrenciders">
+    <Key>
+      <PropertyRef Name="ogrenciders_id" />
+    </Key>
+    <Property Name="ogrenciders_id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ogrenciders_dersid" Type="Int16" />
+    <Property Name="ogrenciders_ogrenciid" Type="Int16" />
+    <NavigationProperty Name="tbl_ders" Relationship="Self.FK_tbl_ogrenciders_tbl_ders" FromRole="tbl_ogrenciders" ToRole="tbl_ders" />
+    <NavigationProperty Name="tbl_ogrenciler" Relationship="Self.FK_tbl_ogrenciders_tbl_ogrenciler1" FromRole="tbl_ogrenciders" ToRole="tbl_ogrenciler" />
+  </EntityType>
+  <EntityType Name="tbl_ogrenciler">
+    <Key>
+      <PropertyRef Name="ogrenci_id" />
+    </Key>
+    <Property Name="ogrenci_id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ogrenci_fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ogrenci_recorddate" Type="DateTime" Precision="3" />
+    <Property Name="ogrenci_birthdate" Type="DateTime" Precision="3" />
+    <Property Name="ogrenci_bolum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ogrenci_no" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_ogrenciders" Relationship="Self.FK_tbl_ogrenciders_tbl_ogrenciler1" FromRole="tbl_ogrenciler" ToRole="tbl_ogrenciders" />
+  </EntityType>
+  <EntityType Name="tbl_okulyonetim">
+    <Key>
+      <PropertyRef Name="yonetim_id" />
+    </Key>
+    <Property Name="yonetim_id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="yonetim_adsoyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="yonetim_gorev" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="yonetim_tip" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="tbl_ders" Relationship="Self.FK_tbl_ders_tbl_okulyonetim" FromRole="tbl_okulyonetim" ToRole="tbl_ders" />
+  </EntityType>
+  <Association Name="FK_tbl_ders_tbl_okulyonetim">
+    <End Role="tbl_okulyonetim" Type="Self.tbl_okulyonetim" Multiplicity="0..1" />
+    <End Role="tbl_ders" Type="Self.tbl_ders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_okulyonetim">
+        <PropertyRef Name="yonetim_id" />
+      </Principal>
+      <Dependent Role="tbl_ders">
+        <PropertyRef Name="ders_okulyonetimid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_ogrenciders_tbl_ders">
+    <End Role="tbl_ders" Type="Self.tbl_ders" Multiplicity="0..1" />
+    <End Role="tbl_ogrenciders" Type="Self.tbl_ogrenciders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_ders">
+        <PropertyRef Name="ders_id" />
+      </Principal>
+      <Dependent Role="tbl_ogrenciders">
+        <PropertyRef Name="ogrenciders_dersid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_ogrenciders_tbl_ogrenciler1">
+    <End Role="tbl_ogrenciler" Type="Self.tbl_ogrenciler" Multiplicity="0..1" />
+    <End Role="tbl_ogrenciders" Type="Self.tbl_ogrenciders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_ogrenciler">
+        <PropertyRef Name="ogrenci_id" />
+      </Principal>
+      <Dependent Role="tbl_ogrenciders">
+        <PropertyRef Name="ogrenciders_ogrenciid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OkulDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="tbl_ders" EntityType="Self.tbl_ders" />
+    <EntitySet Name="tbl_ogrenciders" EntityType="Self.tbl_ogrenciders" />
+    <EntitySet Name="tbl_ogrenciler" EntityType="Self.tbl_ogrenciler" />
+    <EntitySet Name="tbl_okulyonetim" EntityType="Self.tbl_okulyonetim" />
+    <AssociationSet Name="FK_tbl_ders_tbl_okulyonetim" Association="Self.FK_tbl_ders_tbl_okulyonetim">
+      <End Role="tbl_okulyonetim" EntitySet="tbl_okulyonetim" />
+      <End Role="tbl_ders" EntitySet="tbl_ders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_ogrenciders_tbl_ders" Association="Self.FK_tbl_ogrenciders_tbl_ders">
+      <End Role="tbl_ders" EntitySet="tbl_ders" />
+      <End Role="tbl_ogrenciders" EntitySet="tbl_ogrenciders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_ogrenciders_tbl_ogrenciler1" Association="Self.FK_tbl_ogrenciders_tbl_ogrenciler1">
+      <End Role="tbl_ogrenciler" EntitySet="tbl_ogrenciler" />
+      <End Role="tbl_ogrenciders" EntitySet="tbl_ogrenciders" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(OkulDbModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(OkulDbModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

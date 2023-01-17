@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd8af62456d64f7e91e7720aa5b356b3" Name="Diagram1">
+        <EntityTypeShape EntityType="OkulDbModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulDbModel.tbl_ders" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulDbModel.tbl_ogrenciders" Width="3.625" PointX="6" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulDbModel.tbl_ogrenciler" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OkulDbModel.tbl_okulyonetim" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="OkulDbModel.FK_tbl_ders_tbl_okulyonetim" ManuallyRouted="false" />
+        <AssociationConnector Association="OkulDbModel.FK_tbl_ogrenciders_tbl_ders" ManuallyRouted="false" />
+        <AssociationConnector Association="OkulDbModel.FK_tbl_ogrenciders_tbl_ogrenciler1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
